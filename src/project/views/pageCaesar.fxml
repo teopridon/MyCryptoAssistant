@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="424.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.PageCaesar">
+    <Label alignment="CENTER" layoutX="44.0" layoutY="27.0" prefHeight="32.0" prefWidth="669.0" text="Caesar Cipher">
+        <font>
+            <Font name="Bookman Old Style" size="26.0" />
+        </font>
+    </Label>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="85.0" prefHeight="18.0" prefWidth="630.0" text="Caesar cipher, also known as Caesar's cipher or Caesar shift, is a shift cipher and">
+      <font>
+         <Font name="Bookman Old Style" size="14.0" />
+      </font></Label>
+   <Label alignment="CENTER" layoutX="63.0" layoutY="103.0" prefHeight="18.0" prefWidth="630.0" text="it is one of the simplest and most widely known encryption techniques. It is ">
+      <font>
+         <Font name="Bookman Old Style" size="14.0" />
+      </font></Label>
+   <Label alignment="CENTER" layoutX="63.0" layoutY="121.0" prefHeight="18.0" prefWidth="630.0" text="a type of  substitution cipher in which each letter in the plaintext" textAlignment="CENTER">
+      <font>
+         <Font name="Bookman Old Style" size="14.0" />
+      </font></Label>
+   <Label layoutX="130.0" layoutY="217.0" prefHeight="18.0" prefWidth="62.0" text="Message: ">
+      <font>
+         <Font name="Bookman Old Style" size="13.0" />
+      </font></Label>
+   <TextField fx:id="textBoxMessage" layoutX="199.0" layoutY="213.0" prefHeight="26.0" prefWidth="454.0" />
+   <Button layoutX="557.0" layoutY="277.0" mnemonicParsing="false" onAction="#CaesarDecryption" prefHeight="26.0" prefWidth="95.0" text="Decrypt">
+      <font>
+         <Font name="Bookman Old Style" size="12.0" />
+      </font></Button>
+   <Button layoutX="454.0" layoutY="277.0" mnemonicParsing="false" onAction="#CaesarEncryption" prefHeight="26.0" prefWidth="95.0" text="Encrypt">
+      <font>
+         <Font name="Bookman Old Style" size="12.0" />
+      </font>
+   </Button>
+   <Label alignment="CENTER" layoutX="63.0" layoutY="139.0" prefHeight="18.0" prefWidth="630.0" text="is replaced by a letter 3 positions down the english alphabet." textAlignment="CENTER">
+      <font>
+         <Font name="Bookman Old Style" size="14.0" />
+      </font>
+   </Label>
+   <Label fx:id="labelMessage" layoutX="199.0" layoutY="241.0" prefHeight="18.0" prefWidth="480.0" textFill="RED">
+      <font>
+         <Font name="Bookman Old Style" size="11.0" />
+      </font></Label>
+   <Button fx:id="exitButton" layoutX="689.0" layoutY="383.0" mnemonicParsing="false" onAction="#Exit" prefHeight="26.0" prefWidth="62.0" text="Exit">
+      <font>
+         <Font name="Bookman Old Style" size="12.0" />
+      </font>
+   </Button>
+    
+</AnchorPane>

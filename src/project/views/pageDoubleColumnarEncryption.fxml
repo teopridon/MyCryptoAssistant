@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="424.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.PageDoubleColumnarEncryption">
+    <children>
+        <Label layoutX="42.0" layoutY="33.0" prefHeight="18.0" prefWidth="163.0" text="The initial message is: ">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="messageTextField" layoutX="218.0" layoutY="28.0" prefHeight="26.0" prefWidth="440.0" />
+        <Button fx:id="button" layoutX="668.0" layoutY="29.0" mnemonicParsing="false" onAction="#Encrypt" prefHeight="26.0" prefWidth="63.0" text="Encrypt">
+            <font>
+                <Font name="Bookman Old Style" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="exitButton" layoutX="689.0" layoutY="383.0" mnemonicParsing="false" onAction="#Exit" prefHeight="26.0" prefWidth="62.0" text="Exit">
+            <font>
+                <Font name="Bookman Old Style" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="42.0" layoutY="64.0" prefHeight="18.0" prefWidth="163.0" text="The first given key is: ">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="keyTextField" layoutX="218.0" layoutY="60.0" prefHeight="26.0" prefWidth="440.0" />
+        <ScrollPane layoutX="45.0" layoutY="128.0" prefHeight="210.0" prefWidth="686.0">
+            <content>
+                <VBox fx:id="vBox" prefHeight="196.0" prefWidth="2398.0">
+                    <children>
+
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+        <TextField fx:id="resultTextField" layoutX="228.0" layoutY="348.0" prefHeight="26.0" prefWidth="440.0" />
+        <Label layoutX="42.0" layoutY="352.0" prefHeight="18.0" prefWidth="186.0" text="The encrypted message is: ">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+      <TextField fx:id="keyTextField1" layoutX="218.0" layoutY="93.0" prefHeight="26.0" prefWidth="440.0" />
+      <Label layoutX="42.0" layoutY="93.0" prefHeight="18.0" prefWidth="174.0" text="The second given key is: ">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

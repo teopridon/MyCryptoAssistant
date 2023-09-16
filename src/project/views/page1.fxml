@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.Page1">
+   <children>
+      <Label fx:id="label1" alignment="CENTER" layoutX="74.0" layoutY="50.0" prefHeight="53.0" prefWidth="571.0" text="Welcome to, My Crypto Assistant!" textAlignment="CENTER">
+         <font>
+            <Font name="Bookman Old Style" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="130.0" layoutY="175.0" prefHeight="22.0" prefWidth="362.0" text="Plese choose a cipher, from the ones available below:">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceBox1" layoutX="130.0" layoutY="199.0" prefHeight="25.0" prefWidth="462.0" onAction="#Page1">
+         <String fx:value=" - Select a cipher - "/>
+         <String fx:value="DES (Data Encryption Standard)" />
+         <String fx:value="AES (Advanced Encryption Standard)" />
+         <String fx:value="ABC Cipher" />
+         <String fx:value="Affine Cipher" />
+         <String fx:value="Vigenere Cipher" />
+         <String fx:value="Autokey Cipher" />
+         <String fx:value="Beaufort Cipher" />
+         <String fx:value="Caesar Cipher" />
+         <String fx:value="Shift Cipher" />
+         <String fx:value="Regular Columnar Transposition Cipher" />
+         <String fx:value="Double Columnar Transposition Cipher" />
+         <String fx:value="Monoalphabetic Substitution Cipher" />
+         <String fx:value="Trithemius Cipher" />
+         <String fx:value="Porta Cipher" />
+         <String fx:value="Rail Cipher" />
+         <String fx:value="Rail-Fence Cipher" />
+         <String fx:value="Route Cipher" />
+         <String fx:value="Polybius Cipher" />
+         <String fx:value="Scytale Cipher" />
+      </ChoiceBox>
+   </children>
+</AnchorPane>

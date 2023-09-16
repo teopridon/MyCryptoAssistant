@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.PageTrithemiusDecryption">
+    <children>
+        <Label layoutX="33.0" layoutY="32.0" prefHeight="18.0" prefWidth="194.0" text="The encrypted message is: ">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="messageTextField" layoutX="218.0" layoutY="28.0" prefHeight="26.0" prefWidth="440.0" />
+        <Label layoutX="33.0" layoutY="62.0" prefHeight="34.0" prefWidth="701.0" text=" Each letter of the encrypted message, will be substituted with the letter that is found in the tablua">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="33.0" layoutY="79.0" prefHeight="34.0" prefWidth="702.0" text="recta, on the row determined by the letter from the encrypted message and the column 0">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="33.0" layoutY="352.0" prefHeight="18.0" prefWidth="193.0" text="The decrypted message is: ">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="resultTextField" layoutX="218.0" layoutY="348.0" prefHeight="26.0" prefWidth="486.0" />
+        <Button fx:id="button" layoutX="668.0" layoutY="29.0" mnemonicParsing="false" onAction="#Decrypt" prefHeight="26.0" prefWidth="63.0" text="Decrypt">
+            <font>
+                <Font name="Bookman Old Style" size="12.0" />
+            </font>
+        </Button>
+        <ScrollPane fx:id="scrollPane" layoutX="27.0" layoutY="114.0" prefHeight="223.0" prefWidth="702.0">
+            <content>
+                <VBox fx:id="vBox" prefHeight="200.0" prefWidth="1824.0">
+                    <children>
+
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+        <Button fx:id="exitButton" layoutX="689.0" layoutY="383.0" mnemonicParsing="false" onAction="#Exit" prefHeight="26.0" prefWidth="62.0" text="Exit">
+            <font>
+                <Font name="Bookman Old Style" size="12.0" />
+            </font>
+        </Button>
+    </children>
+
+</AnchorPane>

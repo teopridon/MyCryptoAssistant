@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="424.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.PageCaesarDecryption">
+    <children>
+        <Label layoutX="43.0" layoutY="32.0" prefHeight="18.0" prefWidth="188.0" text="The encrypted message is: ">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="messageTextField" layoutX="231.0" layoutY="28.0" prefHeight="26.0" prefWidth="440.0" />
+        <Label layoutX="51.0" layoutY="62.0" prefHeight="34.0" prefWidth="606.0" text=" Each letter of the initial message, will be substituted with the letter that, in the english">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="51.0" layoutY="79.0" prefHeight="34.0" prefWidth="606.0" text="alphabet is situated three positions to the right from the current letter.">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="button" layoutX="681.0" layoutY="28.0" mnemonicParsing="false" onAction="#Decrypt" prefHeight="26.0" prefWidth="63.0" text="Decrypt">
+            <font>
+                <Font name="Bookman Old Style" size="12.0" />
+            </font>
+        </Button>
+        <ScrollPane fx:id="scrollPane" layoutX="49.0" layoutY="127.0" prefHeight="200.0" prefWidth="693.0">
+            <content>
+                <VBox fx:id="vBox" prefHeight="200.0" prefWidth="676.0" >
+                    <children>
+                        <Label fx:id="label2" alignment="CENTER" prefHeight="18.0" prefWidth="689.0" text="A  B  C  D  E  F  G  H  I  J  K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z " visible="false" />
+                        <Label fx:id="label3" alignment="CENTER" layoutX="10.0" layoutY="34.0" prefHeight="18.0" prefWidth="689.0" text="--------------------------------------------------------------------------------------------------" visible="false" />
+                        <Label fx:id="label4" alignment="CENTER" layoutX="10.0" layoutY="34.0" prefHeight="18.0" prefWidth="697.0" text="0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25 " visible="false" />
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+        <Label layoutX="49.0" layoutY="352.0" prefHeight="18.0" prefWidth="193.0" text="The decrypted message is: ">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="resultTextField" layoutX="243.0" layoutY="348.0" prefHeight="26.0" prefWidth="497.0" />
+        <Button fx:id="exitButton" layoutX="689.0" layoutY="383.0" mnemonicParsing="false" onAction="#Exit" prefHeight="26.0" prefWidth="62.0" text="Exit">
+            <font>
+                <Font name="Bookman Old Style" size="12.0" />
+            </font>
+        </Button>
+    </children>
+
+</AnchorPane>

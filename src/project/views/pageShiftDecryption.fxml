@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.PageShiftDecryption">
+    <children>
+        <Label layoutX="31.0" layoutY="33.0" prefHeight="18.0" prefWidth="186.0" text="The encrypted message is: ">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="messageTextField" layoutX="218.0" layoutY="28.0" prefHeight="26.0" prefWidth="440.0" />
+        <Button fx:id="button" layoutX="668.0" layoutY="29.0" mnemonicParsing="false" onAction="#Decrypt" prefHeight="26.0" prefWidth="63.0" text="Decrypt">
+            <font>
+                <Font name="Bookman Old Style" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="exitButton" layoutX="689.0" layoutY="383.0" mnemonicParsing="false" onAction="#Exit" prefHeight="26.0" prefWidth="62.0" text="Exit">
+            <font>
+                <Font name="Bookman Old Style" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="31.0" layoutY="64.0" prefHeight="18.0" prefWidth="163.0" text="The given key is: ">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="keyTextField" layoutX="218.0" layoutY="60.0" prefHeight="26.0" prefWidth="440.0" />
+        <ScrollPane layoutX="55.0" layoutY="97.0" prefHeight="240.0" prefWidth="676.0">
+            <content>
+                <VBox fx:id="vBox" prefHeight="236.0" prefWidth="955.0">
+                    <children>
+                        <Label fx:id="label1" prefHeight="24.0" prefWidth="859.0" text=" Step1:  For each letter in the message, convert the letter into the number that matches its order in the alphabet" visible="false" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" />
+                        <Label text=""/>
+                        <Label fx:id="label2" alignment="CENTER" prefHeight="18.0" prefWidth="689.0" text="A  B  C  D  E  F  G  H  I  J  K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z " visible="false" />
+                        <Label fx:id="label3" alignment="CENTER" layoutX="10.0" layoutY="34.0" prefHeight="18.0" prefWidth="689.0" text="--------------------------------------------------------------------------------------------------" visible="false" />
+                        <Label fx:id="label4" alignment="CENTER" layoutX="10.0" layoutY="34.0" prefHeight="18.0" prefWidth="697.0" text="0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25 " visible="false" />
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+        <TextField fx:id="resultTextField" layoutX="240.0" layoutY="348.0" prefHeight="26.0" prefWidth="440.0" />
+        <Label layoutX="41.0" layoutY="352.0" prefHeight="18.0" prefWidth="186.0" text="The decrypted message is: ">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>

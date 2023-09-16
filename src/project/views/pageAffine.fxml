@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="424.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.PageAffine">
+    
+    <Label alignment="CENTER" layoutX="44.0" layoutY="27.0" prefHeight="32.0" prefWidth="669.0" text="Affine Cipher">
+        <font>
+            <Font name="Bookman Old Style" size="26.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="85.0" prefHeight="18.0" prefWidth="630.0" text="The affine cipher is essentially a standard substitution cipher, where each letter in the">
+        <font>
+            <Font name="Bookman Old Style" size="14.0" />
+        </font></Label>
+    <Label alignment="CENTER" layoutX="63.0" layoutY="103.0" prefHeight="18.0" prefWidth="630.0" text="alphabet is mapped to its numeric equivalent, encrypted using a simple mathematical">
+        <font>
+            <Font name="Bookman Old Style" size="14.0" />
+        </font></Label>
+    <Label alignment="CENTER" layoutX="63.0" layoutY="121.0" prefHeight="18.0" prefWidth="630.0" text="function, and converted back to a letter. Each letter is enciphered with the function" textAlignment="CENTER">
+        <font>
+            <Font name="Bookman Old Style" size="14.0" />
+        </font></Label>
+    <Label layoutX="91.0" layoutY="191.0" prefHeight="18.0" prefWidth="62.0" text="Message: ">
+        <font>
+            <Font name="Bookman Old Style" size="13.0" />
+        </font></Label>
+    <TextField fx:id="messageTextField" layoutX="199.0" layoutY="187.0" prefHeight="26.0" prefWidth="454.0" />
+    <Button fx:id="decryptionButton" layoutX="557.0" layoutY="356.0" mnemonicParsing="false" onAction="#Decrypt" prefHeight="26.0" prefWidth="95.0" text="Decrypt">
+        <font>
+            <Font name="Bookman Old Style" size="12.0" />
+        </font></Button>
+    <Button fx:id="encryptionButton" layoutX="452.0" layoutY="356.0" mnemonicParsing="false" onAction="#Encrypt" prefHeight="26.0" prefWidth="95.0" text="Encrypt">
+        <font>
+            <Font name="Bookman Old Style" size="12.0" />
+        </font>
+    </Button>
+    <Label fx:id="messageLabel" layoutX="199.0" layoutY="213.0" prefHeight="18.0" prefWidth="480.0" textFill="RED">
+        <font>
+            <Font name="Bookman Old Style" size="11.0" />
+        </font></Label>
+    <TextField fx:id="keyTextField" layoutX="199.0" layoutY="238.0" prefHeight="26.0" prefWidth="454.0" />
+    <Label fx:id="keyLabel" layoutX="199.0" layoutY="264.0" prefHeight="18.0" prefWidth="480.0" textFill="RED">
+        <font>
+            <Font name="Bookman Old Style" size="11.0" />
+        </font>
+    </Label>
+    <Label layoutX="91.0" layoutY="242.0" prefHeight="18.0" prefWidth="123.0" text="Key, value for a: ">
+        <font>
+            <Font name="Bookman Old Style" size="13.0" />
+        </font>
+    </Label>
+    <Button fx:id="exitButton" layoutX="689.0" layoutY="383.0" mnemonicParsing="false" onAction="#Exit" prefHeight="26.0" prefWidth="62.0" text="Exit">
+        <font>
+            <Font name="Bookman Old Style" size="12.0" />
+        </font>
+    </Button>
+   <Label alignment="CENTER" layoutX="63.0" layoutY="139.0" prefHeight="18.0" prefWidth="630.0" text="(ax + b) mod 26 and deciphered with the function (a^(-1))*(x-b) mod 26, where a and b" textAlignment="CENTER">
+      <font>
+         <Font name="Bookman Old Style" size="14.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="63.0" layoutY="157.0" prefHeight="18.0" prefWidth="630.0" text="are the key values and x is the numeric value of the letter." textAlignment="CENTER">
+      <font>
+         <Font name="Bookman Old Style" size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="91.0" layoutY="292.0" prefHeight="18.0" prefWidth="123.0" text="Key, value for b: ">
+      <font>
+         <Font name="Bookman Old Style" size="13.0" />
+      </font>
+   </Label>
+   <TextField fx:id="key2TextField" layoutX="199.0" layoutY="288.0" prefHeight="26.0" prefWidth="454.0" />
+   <Label fx:id="key2Label" layoutX="199.0" layoutY="315.0" prefHeight="18.0" prefWidth="480.0" textFill="RED">
+      <font>
+         <Font name="Bookman Old Style" size="11.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

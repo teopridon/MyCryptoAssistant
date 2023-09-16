@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="myCryptoAssistant.jnlp">
+  <information>
+    <title>myCryptoAssistant</title>
+    <vendor>Unknown</vendor>
+    <description>myCryptoAssistant</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="myCryptoAssistant.jar" size="303481" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="775" height="430" main-class="proiect.Main"  name="myCryptoAssistant" />
+  <update check="background"/>
+</jnlp>

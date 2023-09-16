@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="424.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.PageRailFence">
+    <Label alignment="CENTER" layoutX="44.0" layoutY="27.0" prefHeight="32.0" prefWidth="669.0" text="Rail-Fence Cipher">
+        <font>
+            <Font name="Bookman Old Style" size="26.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="85.0" prefHeight="18.0" prefWidth="630.0" text="The rail fence cipher (also called a zigzag cipher) is a form of transposition cipher.">
+        <font>
+            <Font name="Bookman Old Style" size="14.0" />
+        </font></Label>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="103.0" prefHeight="18.0" prefWidth="630.0" text="It derives its name from the way in which it is encoded.">
+        <font>
+            <Font name="Bookman Old Style" size="14.0" />
+        </font></Label>
+    <Label layoutX="128.0" layoutY="168.0" prefHeight="18.0" prefWidth="62.0" text="Message: ">
+        <font>
+            <Font name="Bookman Old Style" size="13.0" />
+        </font></Label>
+    <TextField fx:id="messageTextField" layoutX="199.0" layoutY="164.0" prefHeight="26.0" prefWidth="454.0" />
+    <Button fx:id="decryptionButton" layoutX="557.0" layoutY="303.0" mnemonicParsing="false" onAction="#Decrypt" prefHeight="26.0" prefWidth="95.0" text="Decrypt">
+        <font>
+            <Font name="Bookman Old Style" size="12.0" />
+        </font></Button>
+    <Button fx:id="encryptionButton" layoutX="454.0" layoutY="303.0" mnemonicParsing="false" onAction="#Encrypt" prefHeight="26.0" prefWidth="95.0" text="Encrypt">
+        <font>
+            <Font name="Bookman Old Style" size="12.0" />
+        </font>
+    </Button>
+    <Label fx:id="messageLabel" layoutX="199.0" layoutY="192.0" prefHeight="18.0" prefWidth="480.0" textFill="RED">
+        <font>
+            <Font name="Bookman Old Style" size="11.0" />
+        </font></Label>
+    <TextField fx:id="keyTextField" layoutX="199.0" layoutY="220.0" prefHeight="26.0" prefWidth="454.0" />
+    <Label fx:id="keyLabel" layoutX="199.0" layoutY="246.0" prefHeight="18.0" prefWidth="480.0" textFill="RED">
+        <font>
+            <Font name="Bookman Old Style" size="11.0" />
+        </font>
+    </Label>
+    <Label layoutX="128.0" layoutY="224.0" prefHeight="18.0" prefWidth="62.0" text="Key: ">
+        <font>
+            <Font name="Bookman Old Style" size="13.0" />
+        </font>
+    </Label>
+    <Button fx:id="exitButton" layoutX="689.0" layoutY="383.0" mnemonicParsing="false" onAction="#Exit" prefHeight="26.0" prefWidth="62.0" text="Exit">
+        <font>
+            <Font name="Bookman Old Style" size="12.0" />
+        </font>
+    </Button>
+</AnchorPane>

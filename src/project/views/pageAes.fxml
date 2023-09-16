@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="424.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.PageAES">
+    <Label alignment="CENTER" layoutX="44.0" layoutY="27.0" prefHeight="32.0" prefWidth="669.0" text="AES (Advanced Encryption Standard)">
+        <font>
+            <Font name="Bookman Old Style" size="26.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="85.0" prefHeight="18.0" prefWidth="630.0" text="The Advanced Encryption Standard (AES), also known by its original name Rijndael,">
+        <font>
+            <Font name="Bookman Old Style" size="14.0" />
+        </font></Label>
+    <Label alignment="CENTER" layoutX="63.0" layoutY="103.0" prefHeight="18.0" prefWidth="630.0" text="is a specification for the encryption of electronic data established by the">
+        <font>
+            <Font name="Bookman Old Style" size="14.0" />
+        </font></Label>
+    <Label alignment="CENTER" layoutX="63.0" layoutY="121.0" prefHeight="18.0" prefWidth="630.0" text="U.S. National Institute of Standards and Technology (NIST) in 2001." textAlignment="CENTER">
+        <font>
+            <Font name="Bookman Old Style" size="14.0" />
+        </font></Label>
+    <Label alignment="CENTER" layoutX="63.0" layoutY="139.0" prefHeight="18.0" prefWidth="630.0" text="AES has been adopted by the U.S. government and is now used worldwide." textAlignment="CENTER">
+        <font>
+            <Font name="Bookman Old Style" size="14.0" />
+        </font></Label>
+    <Label alignment="CENTER" layoutX="63.0" layoutY="157.0" prefHeight="18.0" prefWidth="630.0" text="It supersedes the Data Encryption Standard (DES)." textAlignment="CENTER">
+        <font>
+            <Font name="Bookman Old Style" size="14.0" />
+        </font></Label>
+    <Label layoutX="128.0" layoutY="202.0" prefHeight="18.0" prefWidth="62.0" text="Message: ">
+        <font>
+            <Font name="Bookman Old Style" size="13.0" />
+        </font></Label>
+    <TextField fx:id="messageTextField" layoutX="199.0" layoutY="198.0" prefHeight="26.0" prefWidth="454.0" />
+    <Button fx:id="decryptionButton" layoutX="557.0" layoutY="329.0" mnemonicParsing="false" onAction="#Decrypt" prefHeight="26.0" prefWidth="95.0" text="Decrypt">
+        <font>
+            <Font name="Bookman Old Style" size="12.0" />
+        </font></Button>
+    <Button fx:id="encryptionButton" layoutX="454.0" layoutY="329.0" mnemonicParsing="false" onAction="#Encrypt" prefHeight="26.0" prefWidth="95.0" text="Encrypt">
+        <font>
+            <Font name="Bookman Old Style" size="12.0" />
+        </font>
+    </Button>
+    <Label fx:id="messageLabel" layoutX="199.0" layoutY="231.0" prefHeight="18.0" prefWidth="577.0" textFill="RED">
+        <font>
+            <Font name="Bookman Old Style" size="11.0" />
+        </font></Label>
+    <TextField fx:id="keyTextField" layoutX="199.0" layoutY="261.0" prefHeight="26.0" prefWidth="454.0" />
+    <Label fx:id="keyLabel" layoutX="199.0" layoutY="294.0" prefHeight="18.0" prefWidth="578.0" textFill="RED">
+        <font>
+            <Font name="Bookman Old Style" size="11.0" />
+        </font>
+    </Label>
+    <Label layoutX="128.0" layoutY="265.0" prefHeight="18.0" prefWidth="62.0" text="Key: ">
+        <font>
+            <Font name="Bookman Old Style" size="13.0" />
+        </font>
+    </Label>
+    <Button fx:id="exitButton" layoutX="689.0" layoutY="383.0" mnemonicParsing="false" onAction="#Exit" prefHeight="26.0" prefWidth="62.0" text="Exit">
+        <font>
+            <Font name="Bookman Old Style" size="12.0" />
+        </font>
+    </Button>
+</AnchorPane>
